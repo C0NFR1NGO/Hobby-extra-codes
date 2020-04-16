@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+"""
+a="https://www.youtube.com/watch?v=sK5-DfNyewA"
+b="https://www.youtube.com/watch?v=mOV1aBVYKGA"
+c="https://www.youtube.com/watch?v=AFNUeUed8Ro"
+d="https://www.youtube.com/watch?v=dXL9YRkrbM0"
+e="https://www.youtube.com/watch?v=fraxH3rvU84"
+
+print("This program is for updates about coronavirus")
+x=input("Do you want to view Corona virus live count, Corona virus prevention measures or Current news-")
+if x=="corona virus live count" or 'Coronavirus live count' or 'Corona Virus live count' or 'Corona Virus Live Count' or 'Live Count' or 'live count':
+    import webbrowser
+    webbrowser.open(a)
+elif x=='Corona virus prevention measures' or 'corona virus prevention measures' or 'Coronavirus prevention measures' or 'Corona Virus Prevention Measures' or 'prevention measures' or 'Prevention Measures' or 'Prevention measures':
+    import webbrowser
+    webbrowser.open(b)
+elif x=='current news' or 'Current News' or 'Current news':
+    y=input("Do you want english, hindi or marathi news?")
+    if y=="English" or 'english':
+        import webbrowser
+        webbrowser.open(c)
+    elif y=='Hindi' or 'hindi':
+        import webbrowser
+        webbrowser.open(d)
+    elif y=='marathi' or 'Marathi':
+        import webbrowser
+        webbrowser.open(e)
+    else:
+        print("Language not valid.")
+else:
+    print("Option is not available. Please try again later.")
