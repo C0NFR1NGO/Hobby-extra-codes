@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 """
 a="https://www.youtube.com/watch?v=sK5-DfNyewA"
@@ -9,21 +8,25 @@ e="https://www.youtube.com/watch?v=fraxH3rvU84"
 
 print("This program is for updates about coronavirus")
 x=input("Do you want to view Corona virus live count, Corona virus prevention measures or Current news-")
-if x=="corona virus live count" or 'Coronavirus live count' or 'Corona Virus live count' or 'Corona Virus Live Count' or 'Live Count' or 'live count':
+if x=="corona virus live count" or x=='Coronavirus live count' or x=='Corona Virus live count' or x=='Corona Virus Live Count' or x=='Live Count' or x=='live count':
     import webbrowser
     webbrowser.open(a)
-elif x=='Corona virus prevention measures' or 'corona virus prevention measures' or 'Coronavirus prevention measures' or 'Corona Virus Prevention Measures' or 'prevention measures' or 'Prevention Measures' or 'Prevention measures':
+    
+elif x=='Corona virus prevention measures' or x=='corona virus prevention measures' or x=='Coronavirus prevention measures' or x=='Corona Virus Prevention Measures' or x=='prevention measures' or x=='Prevention Measures' or x=='Prevention measures':
     import webbrowser
     webbrowser.open(b)
-elif x=='current news' or 'Current News' or 'Current news':
+    
+elif x=='current news' or x=='Current News' or x=='Current news' or x=="live news" or x=="Live news" or x=="Live News" or x=="news" or x=="News":
     y=input("Do you want english, hindi or marathi news?")
-    if y=="English" or 'english':
+    if y=="English" or y=='english':
         import webbrowser
         webbrowser.open(c)
-    elif y=='Hindi' or 'hindi':
+        
+    elif y=='Hindi' or y=='hindi':
         import webbrowser
         webbrowser.open(d)
-    elif y=='marathi' or 'Marathi':
+        
+    elif y=='marathi' or y=='Marathi':
         import webbrowser
         webbrowser.open(e)
     else:
